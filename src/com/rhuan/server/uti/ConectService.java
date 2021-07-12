@@ -36,6 +36,8 @@ public class ConectService {
 		try {
 			Class.forName("org.postgresql.Driver");
 			conexao = DriverManager.getConnection(url,usuariopos,senhapos);
+			statement = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			
 			
 			
 		} catch (Exception e) {

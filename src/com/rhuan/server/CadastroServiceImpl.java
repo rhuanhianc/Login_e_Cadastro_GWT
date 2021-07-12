@@ -15,9 +15,9 @@ import com.rhuan.server.uti.ConectService;
 public class CadastroServiceImpl extends RemoteServiceServlet implements CadastroService{
 
 	@Override
-	public String saveCadastro(String login, String senha) {
+	public String saveCadastro(String login, String senha, String email) {
 
-		return conexao( login, senha );
+		return conexao( login, senha, email );
 		
 	}
 
@@ -26,21 +26,19 @@ public class CadastroServiceImpl extends RemoteServiceServlet implements Cadastr
 	public String valido = "nao gravou";
 
 	
-	public String conexao(String login, String senha) {
+	public String conexao(String login, String senha, String email) {
 		
 		try {
 			conectaUsuario = new ConectService();
 			conectaUsuario.conecta();
-			String sql =  "insert into login(usuario,senha) values ( 'teste','001')";
-			conectaUsuario.executeSQL(sql);
-			if(conectaUsuario.result.first() == true) 
+			String sql =  "insert into login(usuario,senha,email) values ( '"+login+"','"+senha+"','"+email+"')";
+			conectaUsuario.statement.executeUpdate(sql);
+			
 				valido = "gravou";
-			else 
-				valido ="invalido";
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-			valido ="nao gravou";
+			valido ="nao gravou"+ e;
 		}
 		
 		return valido ;

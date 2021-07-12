@@ -28,6 +28,17 @@
     <url-pattern>/logingwt/login</url-pattern>
   </servlet-mapping>
    <!--Fim -->
+    <!-- Servlets Cadastro -->
+    <servlet>
+    <servlet-name>CadastroServlet</servlet-name>
+    <servlet-class>com.rhuan.server.CadastroServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CadastroServlet</servlet-name>
+    <url-pattern>/logingwt/cadastro</url-pattern>
+  </servlet-mapping>
+   <!--Fim -->
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>LoginGWT.html</welcome-file>

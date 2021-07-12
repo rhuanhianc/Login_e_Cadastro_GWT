@@ -6,5 +6,5 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 @RemoteServiceRelativePath("cadastro")
 public interface CadastroService extends RemoteService{
-	public String saveCadastro(String login, String senha);
+	public String saveCadastro(String login, String senha, String email);
 }
