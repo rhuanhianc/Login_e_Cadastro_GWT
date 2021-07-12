@@ -1,5 +1,6 @@
 package com.rhuan.client;
 
+import com.rhuan.client.cadastro.CadastroUsuarios;
 import com.rhuan.client.home.home;
 import com.rhuan.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
@@ -37,6 +38,7 @@ public class LoginGWT implements EntryPoint {
 	private PasswordTextBox txtSenha = new PasswordTextBox();
 	
 	Button btnEntrar =new Button("Entrar");
+	Button btnCadastrar =new Button("Cadastrar");
 	
 	VerticalPanel vPanel = new VerticalPanel();
 	DialogBox dbPanel = new DialogBox();
@@ -47,6 +49,7 @@ public class LoginGWT implements EntryPoint {
 		vPanel.add(lblSenha);
 		vPanel.add(txtSenha);
 		vPanel.add(btnEntrar);
+		vPanel.add(btnCadastrar);
 		
 		
 		btnEntrar.addClickHandler(new ClickHandler() {
@@ -58,6 +61,15 @@ public class LoginGWT implements EntryPoint {
 			}
 		});
 		
+		btnCadastrar.addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				RootPanel.get().clear();
+			RootPanel.get().add((IsWidget) new CadastroUsuarios());
+				
+			}
+		});
 		dbPanel.add(vPanel);
 		dbPanel.setText("Digite usuario e senha: ");
 		dbPanel.setAnimationEnabled(true);
