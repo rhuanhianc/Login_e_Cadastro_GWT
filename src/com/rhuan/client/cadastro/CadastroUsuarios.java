@@ -9,14 +9,14 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.Widget;
 import com.rhuan.client.LoginGWT;
-import com.rhuan.client.LoginService;
-import com.rhuan.client.LoginServiceAsync;
-import com.rhuan.client.home.home;
+
 
 public class CadastroUsuarios {
 		
@@ -37,7 +37,7 @@ public class CadastroUsuarios {
 		Button btnSalvar =new Button("Salvar");
 		
 		VerticalPanel vPanel = new VerticalPanel();
-		DialogBox dbPanel = new DialogBox();
+		DialogBox dbPanel2 = new DialogBox();
 		
 			
 			vPanel.add(lblLogin);
@@ -53,10 +53,10 @@ public class CadastroUsuarios {
 				
 				@Override
 				public void onClick(ClickEvent event) {
-					RootPanel.get().clear();
-					RootPanel.get().add((IsWidget) new LoginGWT());
-					
+				RootPanel.get().clear();
+				LoginGWT.setView( new LoginGWT());
 				}
+
 			});
 			
 			
@@ -68,12 +68,12 @@ public class CadastroUsuarios {
 					
 				}
 			});
-			dbPanel.add(vPanel);
-			dbPanel.setText("Digite usuario e senha: ");
-			dbPanel.setAnimationEnabled(true);
+			dbPanel2.add(vPanel);
+			dbPanel2.setText("Digite usuario e senha: ");
+			dbPanel2.setAnimationEnabled(true);
 			
 			
-			RootPanel.get().add(dbPanel);
+			RootPanel.get().add(dbPanel2);
 	}
 	AsyncCallback<String> callback = new AsyncCallback<String>() {
 
