@@ -1,14 +1,7 @@
 package com.rhuan.server;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.rhuan.client.LoginService;
 import com.rhuan.client.cadastro.CadastroService;
 import com.rhuan.server.uti.ConectService;
 

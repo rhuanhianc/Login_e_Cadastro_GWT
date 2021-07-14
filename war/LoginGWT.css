@@ -1,7 +1,7 @@
 /** Add css rules here for your application. */
 body{
 	align-content: center;
-	background: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) !important;
+	background: linear-gradient(110deg, #2277af 0%, #8e3cb1 100%) !important;
 }
 
 /** Example rules used by the template application (remove for your app) */
@@ -94,7 +94,8 @@ td {
 .gwt-DialogBox .dialogContent {background-color: none !important;}
 .gwt-DialogBox .dialogMiddleCenter {
 	align-items:center;
-	border-radius: 25px !important;}
+	border-radius: 25px !important;
+  box-shadow: 0px 0px 10px rgb(184, 162, 228);}
 
 
 
