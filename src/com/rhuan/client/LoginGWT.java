@@ -140,8 +140,7 @@ public class LoginGWT implements EntryPoint {
 			if (result.equals("valido")) {
 				RootPanel.get().clear();
 				dbPanel.hide();
-
-				RootPanel.get().add((IsWidget) new home());
+				home entrar = new home();
 			}
 
 			else {

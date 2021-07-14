@@ -8,8 +8,15 @@ body{
 .erro{
 	color: red;
 }
+
 .correto{
 	color: green;
+}
+.tabela_cadastro{
+	
+	border-radius: 25px !important;
+	
+  box-shadow: 0px 0px 5px rgb(184, 162, 228);
 }
 .gwt-Label{
 	text-align: center;
@@ -55,6 +62,9 @@ body{
 td {
   text-align: center;
 }
+.gwt-RadioButton {
+  padding: 28px;
+}
 .gwt-DialogBox .dialogMiddleRight {
 	  font-size: 1em;
   font-weight: bold;
@@ -85,7 +95,7 @@ td {
 .gwt-DialogBox .dialogBottomCenter {background: none  !important;}
 .gwt-DialogBox .dialogBottomCenterInner {background: none  !important;}
 .gwt-DialogBox .dialogBottomRight {    background: none  !important;}
-.gwt-DialogBox .dialogBottomRightInner { background: none  !important;}
+.gwt-DialogBox .dialogBottomRightInner { text-align:center; background: none  !important;}
 .gwt-DialogBox .Caption {
 	border: none !important;
 	background: none  !important;
@@ -113,7 +123,8 @@ td {
    color:#333;
    border-radius: 24px;
    background: none;
-  box-shadow: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) ;
+    box-shadow: 0px 0px 5px rgb(184, 162, 228);
+ 
 }
 .gwt-PasswordTextBox{
    border: 0;
@@ -128,7 +139,7 @@ td {
    color:#333;
    border-radius: 24px;
    background: none;
-  box-shadow: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) ;
+ box-shadow: 0px 0px 5px rgb(184, 162, 228);
 }
 .gwt-Button  { 
 	margin: 4px;
