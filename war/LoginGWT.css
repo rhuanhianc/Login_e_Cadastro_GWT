@@ -1,36 +1,175 @@
 /** Add css rules here for your application. */
 body{
 	align-content: center;
+	background: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) !important;
 }
 
 /** Example rules used by the template application (remove for your app) */
-h1 {
-  font-size: 2em;
+.erro{
+	color: red;
+}
+.correto{
+	color: green;
+}
+.gwt-Label{
+	text-align: center;
+	font-size: 15px;
+}
+.hpanel{
+	padding: 10px;
+}
+.gwt-DialogBox {
+	  font-size: 1m;
   font-weight: bold;
   color: #777777;
   margin: 40px 0px 70px;
   text-align: center;
+  background: none !important;
+   border-radius: 25px !important;
 }
 
-.sendButton {
-  display: block;
-  font-size: 16pt;
+
+
+
+.gwt-DialogBox .dialogTopCenterInner {
+	  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+	
+  text-align: center;
+  
 }
 
-/** Most GWT widgets already have a style name defined */
-.gwt-DialogBox {
-  width: 400px;
+
+
+.gwt-DialogBox .dialogMiddleCenterInner {
+	  font-size: 1em;
+  font-weight: bold;
+  color: #777777;
+  margin: 20px 0px 40px;
+  text-align: center;
+  align-items:center;
+  
+    
+}
+td {
+  text-align: center;
+}
+.gwt-DialogBox .dialogMiddleRight {
+	  font-size: 1em;
+  font-weight: bold;
+  color: #777777 ;
+  margin: 20px 0px 40px;
+  text-align: center;
+  background: none !important;
+  
+}
+.gwt-DialogBox .dialogMiddleRightInner {
+	  font-size: 1em;
+  font-weight: bold;
+  color: #777777;
+  margin: 10px 0px 40px;
+  text-align: center;
+  background: none !important;
 }
 
-.dialogVPanel {
-  margin: 5px;
+.gwt-DialogBox .dialogTopLeft {background: none !important;}
+.gwt-DialogBox .dialogTopLeftInner {background: none !important;}
+.gwt-DialogBox .dialogTopCenter {background: none !important;}
+.gwt-DialogBox .dialogTopCenterInner {background: none !important;}
+.gwt-DialogBox .dialogTopRight {background: none !important;}
+.gwt-DialogBox .dialogTopRightInner {background: none !important;}
+.gwt-DialogBox .dialogMiddleLeft { background: none  !important;}
+.gwt-DialogBox .dialogBottomLeft {background: none  !important;}
+.gwt-DialogBox .dialogBottomLeftInner {background: none  !important;}
+.gwt-DialogBox .dialogBottomCenter {background: none  !important;}
+.gwt-DialogBox .dialogBottomCenterInner {background: none  !important;}
+.gwt-DialogBox .dialogBottomRight {    background: none  !important;}
+.gwt-DialogBox .dialogBottomRightInner { background: none  !important;}
+.gwt-DialogBox .Caption {
+	border: none !important;
+	background: none  !important;
+	   
+}
+.gwt-DialogBox .dialogContent {background-color: none !important;}
+.gwt-DialogBox .dialogMiddleCenter {
+	align-items:center;
+	border-radius: 25px !important;}
+
+
+
+
+.gwt-TextBox{
+   border: 0;
+   font-size: large;
+   text-align: center;
+   margin: 20px auto;
+   border: 2px solid #f1f2f7;
+   padding:14px 10px;
+   width: 100%;
+   height: 50px;
+   outline: none;
+   color:#333;
+   border-radius: 24px;
+   background: none;
+  box-shadow: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) ;
+}
+.gwt-PasswordTextBox{
+   border: 0;
+   font-size: large;
+   text-align: center;
+   margin: 20px auto;
+   border: 2px solid #f1f2f7;
+   padding:14px 10px;
+   width: 100%;
+   height: 50px;
+   outline: none;
+   color:#333;
+   border-radius: 24px;
+   background: none;
+  box-shadow: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) ;
+}
+.gwt-Button  { 
+	margin: 4px;
+  	padding: 4px 10px !important;
+
+    font-size: large;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid #a0a0a0;
+    border-radius: 25px;
 }
 
-.serverResponseLabelError {
-  color: red;
+.gwt-Button{
+    padding: .8rem 1.2rem !important;
+    font:normal 500 16px/20px;
+    color: #ffffff;
+    position: relative ;
+   
+    border-radius: 25px !important;
 }
-
-/** Set ids using widget.getElement().setId("idOfElement") */
-#closeButton {
-  margin: 15px 6px 6px;
+.gwt-Button{
+    background: linear-gradient(110deg, #3498db 0%, #8e44ad 100%) !important;
+    background-clip: padding-box;
+    color: linear-gradient(110deg, #3498db 0%, #8e44ad 100%)   !important;
+    transition: backgraund .6s ease;
+    box-shadow: 0px 5px 4px rgb(120, 60, 240);
+}
+.gwt-Button:hover{
+    background: linear-gradient(110deg, #2a9deb 0%, #b853e4 100%) !important;
+    background-clip: padding-box;
+    color: linear-gradient(110deg, #2696e0 0%, #963abd 100%);
+    transition: background .6s ease;
+    box-shadow: 0px 10px 10px rgb(133, 80, 240);
+}
+.gwt-Button:after{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    content: ' ';
+    z-index: -1;
+    border-radius: 2px;
+    background:linear-gradient(110deg, #3498db 0%, #8e44ad 100%)  !important;
 }
